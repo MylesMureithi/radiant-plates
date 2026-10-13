@@ -1,0 +1,42 @@
+.navbody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 25px;
+    padding-right: 50px;
+    border: 1px black solid;
+    border-radius: 5px;
+    
+}
+
+.navbody a {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.navbody a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbody a:hover {
+    transform: translateY(-1px);
+}
+
+.navbody a:hover::after {
+  width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
