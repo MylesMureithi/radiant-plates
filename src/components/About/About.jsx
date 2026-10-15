@@ -1,8 +1,8 @@
 import "./About.css";
 
 const history = [
-  "We'll add the story of how Radiant Plates began: who started it, when, and why.",
-  "Another paragraph here if there's more to tell.",
+  "Add a story of how Radiant Plates began: who started it, when, and why.",
+  "Another paragraph here if more.",
 ];
 
 const stories = [
