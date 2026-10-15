@@ -12,6 +12,7 @@ function Navbar() {
                 <a href="#about">About Us</a>
                 <a href="#services">Services</a>
                 <a href="#faq">FAQ</a>
+                <a href="#contact">Contact Us</a>
             </div>
         </div>
     );
