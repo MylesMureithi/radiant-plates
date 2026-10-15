@@ -1,44 +1,91 @@
 .navbody {
+    position: sticky;
+    top: 15px;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 15px;
-    padding: 25px;
-    padding-right: 50px;
-    border: 1px black solid;
-    border-radius: 5px;
-    
+    padding: 14px 40px;
+    background-color: rgba(245, 245, 245, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(69, 36, 39, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(69, 36, 39, 0.1);
+    animation: nav-drop 0.6s ease both;
 }
 
+@keyframes nav-drop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Logo */
+.left h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+/* All navbar links */
 .navbody a {
+    position: relative;
+    padding: 5px 0;
     text-decoration: none;
-    color: var(--texts-color);
+    color: var(--texts-color, #452427);
     transition: transform 0.3s ease;
-}
-
-.navbody a::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: currentColor;
-  transition: width 0.3s ease;
-  transform: translateX(-50%);
 }
 
 .navbody a:hover {
     transform: translateY(-1px);
 }
 
-.navbody a:hover::after {
-  width: 100%;
-}
-
+/* Right-side links */
 .nav-links {
     display: flex;
-    gap: 50px;
+    align-items: center;
+    gap: 40px;
     font-size: large;
     font-weight: 450;
+}
+
+/* Animated underline (centered, nav links only) */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Optional call-to-action button (see note below) */
+.nav-links .nav-cta {
+    padding: 10px 22px;
+    color: #f5f5f5;
+    background-color: var(--texts-color, #452427);
+    border-radius: 999px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-links .nav-cta::after {
+    display: none;
+}
+
+.nav-links .nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(69, 36, 39, 0.25);
 }
