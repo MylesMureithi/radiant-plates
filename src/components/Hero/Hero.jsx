@@ -1,10 +1,45 @@
-import './Hero.css'
+import "./Hero.css";
+
+// When you have an image, import it and assign it here:
+// import heroImage from "../../assets/hero.jpg";
+const heroImage = null;
 
 function Hero() {
-    return(
-        <div className="hero-body">
+  return (
+    <section className="hero">
+      <div className="hero-text">
+        <p className="hero-eyebrow">Welcome to Radiant Plates</p>
+        <h1 className="hero-heading">Thoughtfully made, warmly served.</h1>
+        <p className="hero-sub">
+          Supporting street-connected children through compassionate care and
+          family reunification, while raising community awareness.
+        </p>
+
+        <div className="hero-actions">
+          <a href="#services" className="hero-btn hero-btn-primary">
+            Explore Services
+          </a>
+          <a href="#about" className="hero-btn hero-btn-secondary">
+            About Us
+          </a>
         </div>
-    );
+      </div>
+
+      <div className="hero-media">
+        {heroImage ? (
+          <img
+            src={heroImage}
+            alt="Describe the image here"
+            className="hero-image"
+          />
+        ) : (
+          <div className="hero-placeholder" aria-hidden="true">
+            Image coming soon
+          </div>
+        )}
+      </div>
+    </section>
+  );
 }
 
 export default Hero;

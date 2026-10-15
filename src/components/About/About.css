@@ -1,0 +1,59 @@
+.about-block + .about-block {
+  margin-top: 56px;
+}
+
+.about-label {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: var(--texts-color, #452427);
+}
+
+.about-history {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  line-height: 1.7;
+  color: var(--texts-color, #452427);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about-card-title {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.about-grid .card p {
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-avatar {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: var(--surface-color);
+  border: 1.5px dashed var(--primary-color);
+}
+
+.team-role {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

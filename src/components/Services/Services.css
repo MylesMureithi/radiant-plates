@@ -1,0 +1,36 @@
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card svg {
+  color: var(--primary-color);
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(22, 105, 122, 0.12);
+}
+
+.service-title {
+  font-size: 1.15rem;
+}
+
+.service-card p {
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+@media (max-width: 800px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

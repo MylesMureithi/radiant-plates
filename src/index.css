@@ -1,8 +1,26 @@
 :root {
-    --background-color: #f5f5f5;
-    --texts-color: #452427;
-    --max-width: 1200px;
+  /* Palette */
+  --color-orange: #f89a34;
+  --color-light: #f5f5f5;
+  --color-brown: #452427;
+  --color-mist: #c7d3dd;
+  --color-teal: #16697a;
+
+  /* Roles (change these to restyle the whole site) */
+  --background-color: var(--color-light);
+  --texts-color: var(--color-brown);
+  --accent-color: var(--color-orange);
+  --primary-color: var(--color-teal);
+  --surface-color: var(--color-mist);
+
+  --max-width: 1200px;
 }
+
+:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
 
 *, *::before, *::after {
     margin: 0;
@@ -24,4 +42,69 @@ body {
 
 .page-content {
     flex: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-alt {
+  background-color: color-mix(in srgb, var(--surface-color) 40%, var(--background-color));
+}
+
+.section-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section-header {
+  max-width: 640px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.section-eyebrow {
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  line-height: 1.15;
+  color: var(--texts-color, #452427);
+}
+
+.section-sub {
+  margin-top: 12px;
+  line-height: 1.6;
+  color: var(--texts-color, #452427);
+  opacity: 0.8;
+}
+
+.card {
+  padding: 24px;
+  color: var(--texts-color, #452427);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--surface-color);
+  border-radius: 14px;
+}
+
+[id] {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 700px) {
+  .section { padding: 56px 0; }
+  .section-inner { padding: 0 24px; }
 }
