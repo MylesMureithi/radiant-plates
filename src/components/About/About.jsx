@@ -1,3 +1,4 @@
+import TeamMember2 from '../../assets/team/team-member-2.png'
 import "./About.css";
 
 const history = [
@@ -11,7 +12,7 @@ const stories = [
 
 const team = [
   { id: 1, name: "Team member", role: "Role", image: null },
-  { id: 2, name: "Team member", role: "Role", image: null },
+  { id: 2, name: "Team member", role: "Role", image: TeamMember2 },
 ];
 
 function About() {
@@ -52,7 +53,7 @@ function About() {
                 {image ? (
                   <img src={image} alt={name} className="team-avatar" />
                 ) : (
-                  <div className="team-avatar" aria-hidden="true" />
+                  <div className="team-avatar team-avatar-placeholder" aria-hidden="true" />
                 )}
                 <h4 className="about-card-title">{name}</h4>
                 <p className="team-role">{role}</p>

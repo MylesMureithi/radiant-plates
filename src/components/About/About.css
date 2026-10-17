@@ -40,7 +40,8 @@
   font-size: 1.05rem;
 }
 
-.about-grid .card p {
+.story-grid .card p,
+.team-grid .card p {
   line-height: 1.6;
   opacity: 0.85;
 }
@@ -51,11 +52,15 @@
 
 .team-avatar {
   display: block;
-  width: 96px;
-  height: 96px;
+  width: 106px;
+  height: 106px;
   margin: 0 auto 16px;
   object-fit: cover;
+  object-position: center top;
   border-radius: 50%;
+}
+
+.team-avatar-placeholder {
   background-color: var(--surface-color);
   border: 1.5px dashed var(--primary-color);
 }
@@ -65,7 +70,7 @@
 }
 
 @media (max-width: 800px) {
-  .about-grid {
+  .team-grid {
     grid-template-columns: 1fr;
   }
 }
