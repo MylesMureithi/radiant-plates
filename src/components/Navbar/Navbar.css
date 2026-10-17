@@ -33,6 +33,44 @@
     letter-spacing: 0.04em;
 }
 
+/* Logo + name */
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo {
+    display: block;
+    flex-shrink: 0;
+    height: 40px;
+    width: auto;
+}
+
+.brand-name {
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .navbody {
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .brand {
+        gap: 8px;
+    }
+
+    .nav-logo {
+        height: 32px;
+    }
+
+    .left h2 {
+        font-size: 1.1em;
+    }
+}
+
 /* All navbar links */
 .navbody a {
     position: relative;
