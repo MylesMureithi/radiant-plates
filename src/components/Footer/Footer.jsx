@@ -13,7 +13,7 @@ function Footer() {
                     <a href="#about">About Us</a>
                     <a href="#services">Our Services</a>
                     <a href="#support">Support</a>
-                    <a href="mailto:info@radiantplate.org" target='_blank'>Contact Us</a>
+                    <a href="#contact">Contact Us</a>
                 </div>
                 <div className="footer-bottom">
                     <small>
