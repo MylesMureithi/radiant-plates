@@ -1,4 +1,5 @@
-import { FaAppleAlt, FaHandshake, FaUtensils } from "react-icons/fa";
+import { RiBowlFill } from "react-icons/ri";
+import { FaHandshake, FaUtensils } from "react-icons/fa";
 import { HiLightBulb } from "react-icons/hi";
 import "./Services.css";
 
@@ -6,7 +7,7 @@ const services = [
   {
     id: 1,
     title: "Feeding Programmes",
-    Icon: FaAppleAlt,
+    Icon: RiBowlFill,
     description: "Add a short description: who the programme serves and how it runs.",
   },
   {
