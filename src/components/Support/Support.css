@@ -1,0 +1,85 @@
+.support {
+  background-color: var(--primary-color);
+}
+
+.support .section-eyebrow,
+.support .section-title,
+.support .section-sub {
+  color: var(--background-color);
+}
+
+.support .section-eyebrow {
+  opacity: 0.85;
+}
+
+.support .section-sub {
+  opacity: 0.9;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 420px));
+  justify-content: center;
+  gap: 20px;
+}
+
+.support .support-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--background-color);
+  border-color: transparent;
+}
+
+.support-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary-color);
+}
+
+.support-card-head h3 {
+  font-size: 1.1rem;
+  color: var(--texts-color);
+}
+
+.support-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.support-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--surface-color);
+}
+
+.support-row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.support-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.support-value {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-variant-numeric: tabular-nums;
+  color: var(--primary-color);
+  overflow-wrap: anywhere;
+}
+
+.support-note {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
