@@ -9,12 +9,16 @@
 }
 
 .about-history {
-  max-width: 720px;
   display: flex;
   flex-direction: column;
   gap: 14px;
   line-height: 1.7;
   color: var(--texts-color, #452427);
+}
+
+.about-history p {
+  opacity: 0.85;
+  max-width: 75ch;
 }
 
 .about-grid {

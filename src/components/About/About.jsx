@@ -26,7 +26,7 @@ function About() {
 
         <div className="about-block">
           <h3 className="about-label">Our History</h3>
-          <div className="about-history history-card">
+          <div className="about-history card">
             {history.map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
