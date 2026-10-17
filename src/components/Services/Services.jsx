@@ -1,4 +1,5 @@
 import { FaAppleAlt, FaHandshake, FaUtensils } from "react-icons/fa";
+import { HiLightBulb } from "react-icons/hi";
 import "./Services.css";
 
 const services = [
@@ -10,12 +11,18 @@ const services = [
   },
   {
     id: 2,
-    title: "Family Reconciliations",
+    title: "Family Reintegrations",
     Icon: FaHandshake,
     description: "Add a short description: how the process works and who it's for.",
   },
   {
     id: 3,
+    title: "Raising Awareness",
+    Icon: HiLightBulb,
+    description: "Add a short description: what's prepared, for whom, and how people can take part.",
+  },
+  {
+    id: 4,
     title: "Meal Prep via Community Kitchen",
     Icon: FaUtensils,
     description: "Add a short description: what's prepared, for whom, and how people can take part.",

@@ -9,10 +9,9 @@ function Hero() {
     <section className="hero">
       <div className="hero-text">
         <p className="hero-eyebrow">Welcome to Radiant Plates</p>
-        <h1 className="hero-heading">Thoughtfully made, warmly served.</h1>
+        <h1 className="hero-heading">One meal at a time.</h1>
         <p className="hero-sub">
-          Supporting street-connected children through compassionate care and
-          family reunification, while raising community awareness.
+          To provide nutritious meals through community-driven food programs to empower vulnerable children, encourage family reintegration and raise awareness.
         </p>
 
         <div className="hero-actions">

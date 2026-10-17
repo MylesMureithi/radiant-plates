@@ -1,20 +1,27 @@
-import { FaRegEnvelope, FaWhatsapp } from "react-icons/fa";
+import { FaRegEnvelope, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import "./Contact.css";
 
 const contacts = [
   {
     id: 1,
-    label: "Email Us",
-    value: "info@radiantplate.org",
-    href: "mailto:info@radiantplate.org",
-    Icon: FaRegEnvelope,
+    label: "WhatsApp",
+    value: "+000 00 000 0000",
+    href: "https://wa.me/00000000000",
+    Icon: FaWhatsapp,
   },
   {
     id: 2,
-    label: "WhatsApp",
-    value: "+000 00 000 0000",
-    href: "https://wa.me/66831568761",
-    Icon: FaWhatsapp,
+    label: "Instagram",
+    value: null,
+    href: null,
+    Icon: FaInstagram,
+  },
+  {
+    id: 3,
+    label: "Email Us",
+    value: "info@radiantplates.org",
+    href: "mailto:info@radiantplates.org",
+    Icon: FaRegEnvelope,
   },
 ];
 
