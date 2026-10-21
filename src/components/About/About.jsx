@@ -1,3 +1,4 @@
+import TeamMember1 from '../../assets/team/team-member-1.png'
 import TeamMember2 from '../../assets/team/team-member-2.png'
 import "./About.css";
 
@@ -11,7 +12,7 @@ const stories = [
 ];
 
 const team = [
-  { id: 1, name: "Team member", role: "Role", image: null },
+  { id: 1, name: "Team member", role: "Role", image: TeamMember1 },
   { id: 2, name: "Team member", role: "Role", image: TeamMember2 },
 ];
 
