@@ -1,4 +1,5 @@
 import "./Hero.css";
+import logo from "../../assets/svg-logo.svg";
 
 // When you have an image, import it and assign it here:
 // import heroImage from "../../assets/hero.jpg";
@@ -8,10 +9,15 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-text">
+        <div className="hero-brand">
+          <img src={logo} alt="Radiant Plates logo" className="hero-logo" />
+        </div>
         <p className="hero-eyebrow">Welcome to Radiant Plates</p>
         <h1 className="hero-heading">Providing one meal at a time.</h1>
         <p className="hero-sub">
-          To provide nutritious meals through community-driven food programs to empower vulnerable children, encourage family reintegration and raise awareness.
+          To provide nutritious meals through community-driven food programs to
+          empower vulnerable children, encourage family reintegration and raise
+          awareness.
         </p>
 
         <div className="hero-actions">
