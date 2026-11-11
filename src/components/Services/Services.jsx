@@ -8,25 +8,29 @@ const services = [
     id: 1,
     title: "Feeding Programmes",
     Icon: RiBowlFill,
-    description: "Add a short description: who the programme serves and how it runs.",
+    description:
+      "Regular, shared meals for families and individuals who need them, prepared with care and served with dignity. Get in touch to find out how to take part.",
   },
   {
     id: 2,
     title: "Family Reintegrations",
     Icon: FaHandshake,
-    description: "Add a short description: how the process works and who it's for.",
+    description:
+      "Patient, confidential support that helps people return to their families and communities, with guidance for everyone involved along the way.",
   },
   {
     id: 3,
     title: "Raising Awareness",
     Icon: HiLightBulb,
-    description: "Add a short description: what's prepared, for whom, and how people can take part.",
+    description:
+      "Sharing the stories and realities behind hunger and family separation through outreach and community conversations, so more people understand the need and how to help.",
   },
   {
     id: 4,
     title: "Meal Prep via Community Kitchen",
     Icon: FaUtensils,
-    description: "Add a short description: what's prepared, for whom, and how people can take part.",
+    description:
+      "Meals prepared in bulk in a shared kitchen, where volunteers and community members cook, learn, and eat together.",
   },
 ];
 
