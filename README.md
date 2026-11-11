@@ -3,6 +3,7 @@
 A responsive website built for Radiant Plates, a new business offering feeding programmes, family reconciliations, and meal prep through a community kitchen. The goal of the site is to give them a clear, welcoming online home so they can start reaching people and get the business moving.
 
 **Live site:** [radiantplates.org](https://radiantplates.org/)
+
 **Built by:** [Myles Mureithi](https://github.com/MylesMureithi) · [Freelance web development](https://damperweb.vercel.app/)
 
 > 🚧 **Status:** the site is live, and some content (team, stories, FAQ) is placeholder text until the client supplies the real copy.
