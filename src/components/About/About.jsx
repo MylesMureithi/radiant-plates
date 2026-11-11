@@ -3,17 +3,31 @@ import TeamMember2 from '../../assets/team/team-member-2.png'
 import "./About.css";
 
 const history = [
-  "Add a story of how Radiant Plates began: who started it, when, and why.",
-  "Another paragraph here if more.",
+  "Radiant Plates began as a small group of neighbours sharing meals with families who needed them. What started with one pot and a handful of volunteers grew into a regular feeding programme.",
+  "As we listened to the families we served, we saw that a meal was often only part of the need. Over time we added family reconciliation support and opened a community kitchen, where people cook, learn, and eat together.",
 ];
 
 const stories = [
-  { id: 1, title: "Story title", text: "Add something we've done, an accomplishment, or a moment worth sharing." },
+  {
+    id: 1,
+    title: "Our first community meal",
+    text: "A few volunteers, one borrowed kitchen, and a table big enough for everyone who showed up. That first meal showed us how much a shared plate can mean.",
+  },
+  {
+    id: 2,
+    title: "Opening the community kitchen",
+    text: "The kitchen gave us a permanent home for meal prep, so we could cook for more people and train volunteers who now run shifts of their own.",
+  },
+  {
+    id: 3,
+    title: "Families coming back together",
+    text: "Through patient conversations and ongoing support, families that had drifted apart found their way back to the same table.",
+  },
 ];
 
 const team = [
-  { id: 1, name: "Team member", role: "Role", image: TeamMember1 },
-  { id: 2, name: "Team member", role: "Role", image: TeamMember2 },
+  { id: 1, name: "Daisy Mwangi", role: "Founder", image: TeamMember1 },
+  { id: 2, name: "Lenny Mwangi", role: "Co-Founder", image: TeamMember2 },
 ];
 
 function About() {

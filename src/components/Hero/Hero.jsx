@@ -3,7 +3,7 @@ import logo from "../../assets/svg-logo.svg";
 
 // When you have an image, import it and assign it here:
 // import heroImage from "../../assets/hero.jpg";
-const heroImage = null;
+import heroImage from "../../assets/placeholder-main.png";
 
 function Hero() {
   return (

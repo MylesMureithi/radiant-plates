@@ -1,14 +1,15 @@
-import { FaRegEnvelope, FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FaRegEnvelope, FaWhatsapp } from "react-icons/fa";
 import "./Contact.css";
 
 const contacts = [
   {
     id: 1,
     label: "WhatsApp",
-    value: "+000 00 000 0000",
-    href: "https://wa.me/00000000000",
+    value: "Click to chat with us",
+    href: "https://wa.me/254725091871?text=Hello%20Radiant%20Plates",
     Icon: FaWhatsapp,
   },
+/*
   {
     id: 2,
     label: "Instagram",
@@ -16,6 +17,7 @@ const contacts = [
     href: null,
     Icon: FaInstagram,
   },
+*/
   {
     id: 3,
     label: "Email Us",
